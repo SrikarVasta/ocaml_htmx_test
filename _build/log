@@ -1,0 +1,153 @@
+# dune exec ocaml_htmx
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/srikarvasta/git/ocaml_htmx
+# Auto-detected concurrency: 16
+$ /usr/bin/ocamlc.opt -config > /tmp/dune_154012_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; ocaml_bin = External "/usr/bin"
+#  ; ocaml = Ok External "/usr/bin/ocaml"
+#  ; ocamlc = External "/usr/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/usr/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/usr/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/usr/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/home/srikarvasta/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/usr/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/home/srikarvasta/git/ocaml_htmx"
+#        ; "INSIDE_DUNE" : "/home/srikarvasta/git/ocaml_htmx/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/srikarvasta/git/ocaml_htmx/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/home/srikarvasta/git/ocaml_htmx/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/srikarvasta/git/ocaml_htmx/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/home/srikarvasta/.opam/default/lib" ]
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.13.1"
+#      ; standard_library_default = "/usr/lib/ocaml"
+#      ; standard_library = "/usr/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "x86_64-linux-gnu-gcc"
+#      ; ocamlc_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ]
+#      ; ocamlc_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ]
+#      ; ocamlopt_cppflags =
+#          [ "-D_FILE_OFFSET_BITS=64"; "-Wdate-time"; "-D_FORTIFY_SOURCE=2" ]
+#      ; bytecomp_c_compiler =
+#          [ "x86_64-linux-gnu-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-Wdate-time"
+#          ; "-D_FORTIFY_SOURCE=2"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "x86_64-linux-gnu-gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-fPIC"
+#          ; "-g"
+#          ; "-O2"
+#          ; "-ffile-prefix-map=/build/ocaml-SC7b9w/ocaml-4.13.1=."
+#          ; "-fstack-protector-strong"
+#          ; "-Wformat"
+#          ; "-Werror=format-security"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-Wdate-time"
+#          ; "-D_FORTIFY_SOURCE=2"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "x86_64-linux-gnu-ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "x86_64-linux-gnu-as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-pc-linux-gnu"
+#      ; target = "x86_64-pc-linux-gnu"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X030"
+#      ; cmi_magic_number = "Caml1999I030"
+#      ; cmo_magic_number = "Caml1999O030"
+#      ; cma_magic_number = "Caml1999A030"
+#      ; cmx_magic_number = "Caml1999Y030"
+#      ; cmxa_magic_number = "Caml1999Z030"
+#      ; ast_impl_magic_number = "Caml1999M030"
+#      ; ast_intf_magic_number = "Caml1999N030"
+#      ; cmxs_magic_number = "Caml1999D030"
+#      ; cmt_magic_number = "Caml1999T030"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /usr/bin/ocamldep.opt -modules -impl bin/main.ml) > _build/default/bin/.main.eobjs/dune__exe__Main.impl.d
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /home/srikarvasta/.opam/default/lib/angstrom -I /home/srikarvasta/.opam/default/lib/base64 -I /home/srikarvasta/.opam/default/lib/base64/rfc2045 -I /home/srikarvasta/.opam/default/lib/bigarray-overlap -I /home/srikarvasta/.opam/default/lib/bigstringaf -I /home/srikarvasta/.opam/default/lib/caqti -I /home/srikarvasta/.opam/default/lib/caqti-lwt -I /home/srikarvasta/.opam/default/lib/cstruct -I /home/srikarvasta/.opam/default/lib/digestif/c -I /home/srikarvasta/.opam/default/lib/dream -I /home/srikarvasta/.opam/default/lib/dream-httpaf -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten-lwt -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten-lwt-unix -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2 -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2-lwt -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2-lwt-unix -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-hpack -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_ -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_-lwt -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_-lwt-unix -I /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-websocketaf -I /home/srikarvasta/.opam/default/lib/dream-pure -I /home/srikarvasta/.opam/default/lib/dream/certificate -I /home/srikarvasta/.opam/default/lib/dream/cipher -I /home/srikarvasta/.opam/default/lib/dream/graphiql -I /home/srikarvasta/.opam/default/lib/dream/graphql -I /home/srikarvasta/.opam/default/lib/dream/http -I /home/srikarvasta/.opam/default/lib/dream/server -I /home/srikarvasta/.opam/default/lib/dream/sql -I /home/srikarvasta/.opam/default/lib/dream/unix -I /home/srikarvasta/.opam/default/lib/duration -I /home/srikarvasta/.opam/default/lib/eqaf -I /home/srikarvasta/.opam/default/lib/eqaf/bigstring -I /home/srikarvasta/.opam/default/lib/eqaf/cstruct -I /home/srikarvasta/.opam/default/lib/faraday -I /home/srikarvasta/.opam/default/lib/faraday-lwt -I /home/srikarvasta/.opam/default/lib/faraday-lwt-unix -I /home/srikarvasta/.opam/default/lib/fmt -I /home/srikarvasta/.opam/default/lib/graphql -I /home/srikarvasta/.opam/default/lib/graphql-lwt -I /home/srikarvasta/.opam/default/lib/graphql_parser -I /home/srikarvasta/.opam/default/lib/hmap -I /home/srikarvasta/.opam/default/lib/ke -I /home/srikarvasta/.opam/default/lib/logs -I /home/srikarvasta/.opam/default/lib/lwt -I /home/srikarvasta/.opam/default/lib/lwt/unix -I /home/srikarvasta/.opam/default/lib/lwt_ssl -I /home/srikarvasta/.opam/default/lib/magic-mime -I /home/srikarvasta/.opam/default/lib/mirage-clock -I /home/srikarvasta/.opam/default/lib/mirage-crypto -I /home/srikarvasta/.opam/default/lib/mirage-crypto-rng -I /home/srikarvasta/.opam/default/lib/mirage-crypto-rng-lwt -I /home/srikarvasta/.opam/default/lib/mirage-crypto-rng/unix -I /home/srikarvasta/.opam/default/lib/mtime -I /home/srikarvasta/.opam/default/lib/mtime/clock/os -I /home/srikarvasta/.opam/default/lib/multipart_form -I /home/srikarvasta/.opam/default/lib/multipart_form-lwt -I /home/srikarvasta/.opam/default/lib/ocplib-endian -I /home/srikarvasta/.opam/default/lib/ocplib-endian/bigstring -I /home/srikarvasta/.opam/default/lib/pecu -I /home/srikarvasta/.opam/default/lib/prettym -I /home/srikarvasta/.opam/default/lib/psq -I /home/srikarvasta/.opam/default/lib/ptime -I /home/srikarvasta/.opam/default/lib/ptime/clock/os -I /home/srikarvasta/.opam/default/lib/re -I /home/srikarvasta/.opam/default/lib/result -I /home/srikarvasta/.opam/default/lib/rresult -I /home/srikarvasta/.opam/default/lib/seq -I /home/srikarvasta/.opam/default/lib/ssl -I /home/srikarvasta/.opam/default/lib/stringext -I /home/srikarvasta/.opam/default/lib/unstrctrd -I /home/srikarvasta/.opam/default/lib/unstrctrd/parser -I /home/srikarvasta/.opam/default/lib/uri -I /home/srikarvasta/.opam/default/lib/uutf -I /home/srikarvasta/.opam/default/lib/yojson -I /usr/lib/ocaml/threads -I lib/.ocaml_htmx.objs/byte -I lib/.ocaml_htmx.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /usr/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe /home/srikarvasta/.opam/default/lib/bigstringaf/bigstringaf.cmxa -I /home/srikarvasta/.opam/default/lib/bigstringaf /home/srikarvasta/.opam/default/lib/angstrom/angstrom.cmxa /home/srikarvasta/.opam/default/lib/logs/logs.cmxa /home/srikarvasta/.opam/default/lib/ptime/ptime.cmxa /home/srikarvasta/.opam/default/lib/stringext/stringext.cmxa /home/srikarvasta/.opam/default/lib/uri/uri.cmxa /usr/lib/ocaml/unix.cmxa -I /usr/lib/ocaml /home/srikarvasta/.opam/default/lib/caqti/caqti.cmxa -I /usr/lib/ocaml /home/srikarvasta/.opam/default/lib/lwt/lwt.cmxa /home/srikarvasta/.opam/default/lib/logs/logs_lwt.cmxa /usr/lib/ocaml/bigarray.cmxa -I /usr/lib/ocaml /home/srikarvasta/.opam/default/lib/ocplib-endian/ocplib_endian.cmxa /home/srikarvasta/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cmxa /usr/lib/ocaml/threads/threads.cmxa -I /usr/lib/ocaml /home/srikarvasta/.opam/default/lib/lwt/unix/lwt_unix.cmxa -I /home/srikarvasta/.opam/default/lib/lwt/unix /home/srikarvasta/.opam/default/lib/caqti-lwt/caqti_lwt.cmxa /home/srikarvasta/.opam/default/lib/cstruct/cstruct.cmxa -I /home/srikarvasta/.opam/default/lib/cstruct /home/srikarvasta/.opam/default/lib/base64/base64.cmxa /home/srikarvasta/.opam/default/lib/hmap/hmap.cmxa /home/srikarvasta/.opam/default/lib/dream-pure/dream_pure.cmxa /home/srikarvasta/.opam/default/lib/eqaf/eqaf.cmxa /home/srikarvasta/.opam/default/lib/eqaf/bigstring/eqaf_bigstring.cmxa /home/srikarvasta/.opam/default/lib/eqaf/cstruct/eqaf_cstruct.cmxa /home/srikarvasta/.opam/default/lib/mirage-crypto/mirage_crypto.cmxa -I /home/srikarvasta/.opam/default/lib/mirage-crypto /home/srikarvasta/.opam/default/lib/mirage-crypto-rng/mirage_crypto_rng.cmxa /home/srikarvasta/.opam/default/lib/dream/cipher/dream__cipher.cmxa /home/srikarvasta/.opam/default/lib/dream/graphiql/dream__graphiql.cmxa /home/srikarvasta/.opam/default/lib/digestif/c/digestif_c.cmxa -I /home/srikarvasta/.opam/default/lib/digestif/c /home/srikarvasta/.opam/default/lib/fmt/fmt.cmxa /home/srikarvasta/.opam/default/lib/magic-mime/magic_mime_library.cmxa /home/srikarvasta/.opam/default/lib/mirage-clock/mirage_clock.cmxa /home/srikarvasta/.opam/default/lib/ke/ke.cmxa /home/srikarvasta/.opam/default/lib/uutf/uutf.cmxa /home/srikarvasta/.opam/default/lib/unstrctrd/unstrctrd.cmxa /home/srikarvasta/.opam/default/lib/unstrctrd/parser/unstrctrd_parser.cmxa /home/srikarvasta/.opam/default/lib/base64/rfc2045/base64_rfc2045.cmxa /home/srikarvasta/.opam/default/lib/bigarray-overlap/overlap.cmxa -I /home/srikarvasta/.opam/default/lib/bigarray-overlap /home/srikarvasta/.opam/default/lib/prettym/prettym.cmxa /home/srikarvasta/.opam/default/lib/pecu/pecu.cmxa /home/srikarvasta/.opam/default/lib/multipart_form/multipart_form.cmxa /home/srikarvasta/.opam/default/lib/multipart_form-lwt/multipart_form_lwt.cmxa /home/srikarvasta/.opam/default/lib/yojson/yojson.cmxa /home/srikarvasta/.opam/default/lib/dream/server/dream__server.cmxa /home/srikarvasta/.opam/default/lib/re/re.cmxa /home/srikarvasta/.opam/default/lib/graphql_parser/graphql_parser.cmxa /home/srikarvasta/.opam/default/lib/rresult/rresult.cmxa /home/srikarvasta/.opam/default/lib/graphql/graphql.cmxa /home/srikarvasta/.opam/default/lib/graphql-lwt/graphql_lwt.cmxa /usr/lib/ocaml/str.cmxa -I /usr/lib/ocaml /home/srikarvasta/.opam/default/lib/dream/graphql/dream__graphql.cmxa /home/srikarvasta/.opam/default/lib/dream/certificate/dream__certificate.cmxa /home/srikarvasta/.opam/default/lib/faraday/faraday.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten/dream_gluten.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_/dream_httpaf_.cmxa /home/srikarvasta/.opam/default/lib/result/result.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-websocketaf/dream_websocketaf.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream_httpaf.cmxa /home/srikarvasta/.opam/default/lib/faraday-lwt/faraday_lwt.cmxa /home/srikarvasta/.opam/default/lib/faraday-lwt-unix/faraday_lwt_unix.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten-lwt/dream_gluten_lwt.cmxa /home/srikarvasta/.opam/default/lib/ssl/ssl.cmxa -I /home/srikarvasta/.opam/default/lib/ssl /home/srikarvasta/.opam/default/lib/lwt_ssl/lwt_ssl.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-gluten-lwt-unix/dream_gluten_lwt_unix.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-hpack/dream_hpack.cmxa /home/srikarvasta/.opam/default/lib/psq/psq.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2/dream_h2.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2-lwt/dream_h2_lwt.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-h2-lwt-unix/dream_h2_lwt_unix.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_-lwt/dream_httpaf__lwt.cmxa /home/srikarvasta/.opam/default/lib/dream-httpaf/dream-httpaf_-lwt-unix/dream_httpaf__lwt_unix.cmxa /home/srikarvasta/.opam/default/lib/dream/http/dream__http.cmxa /home/srikarvasta/.opam/default/lib/dream/unix/dream__unix.cmxa /home/srikarvasta/.opam/default/lib/dream/sql/dream__sql.cmxa /home/srikarvasta/.opam/default/lib/fmt/fmt_tty.cmxa /home/srikarvasta/.opam/default/lib/mirage-crypto-rng/unix/mirage_crypto_rng_unix.cmxa -I /home/srikarvasta/.opam/default/lib/mirage-crypto-rng/unix /home/srikarvasta/.opam/default/lib/duration/duration.cmxa /home/srikarvasta/.opam/default/lib/mtime/mtime.cmxa /home/srikarvasta/.opam/default/lib/mtime/clock/os/mtime_clock.cmxa -I /home/srikarvasta/.opam/default/lib/mtime/clock/os /home/srikarvasta/.opam/default/lib/mirage-crypto-rng-lwt/mirage_crypto_rng_lwt.cmxa /home/srikarvasta/.opam/default/lib/ptime/clock/os/ptime_clock.cmxa -I /home/srikarvasta/.opam/default/lib/ptime/clock/os /home/srikarvasta/.opam/default/lib/dream/dream.cmxa lib/ocaml_htmx.cmxa bin/.main.eobjs/native/dune__exe.cmx bin/.main.eobjs/native/dune__exe__Main.cmx)
